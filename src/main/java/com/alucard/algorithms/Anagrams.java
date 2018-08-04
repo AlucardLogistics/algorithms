@@ -28,6 +28,7 @@ public class Anagrams {
 	
 	private static boolean isAnagram(String one, String two) {
 		
+		
 		if(one.length() == two.length()) {
 			char[] arrOne = one.toLowerCase().toCharArray();
 			char[] arrTwo = two.toLowerCase().toCharArray();
