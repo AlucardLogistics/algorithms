@@ -27,13 +27,17 @@ public class Fibonacci {
 		int numTwo = 1;
 		int temp = 0;
 		
-		for(int i=0; i < n; i++) {
+		if(n == 0) {
+			return numOne;
+		}
+		
+		for(int i=2; i <= n; i++) {
 			temp = numOne + numTwo;
 			numOne = numTwo;
 			numTwo = temp;
 		}
 		
-		return numOne;
+		return numTwo;
 	}
 	
 	private static int fibonacciRecursion(int n) {
